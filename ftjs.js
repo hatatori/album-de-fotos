@@ -12,6 +12,7 @@ function ftsetimg(n){
 function ftnext(){ try{ ftsetimg(valor_atual+1) }catch(e){} }
 function ftprev(){ try{ftsetimg(valor_atual-1)}catch(e){} }
 function fttoggle(){ ftalbum.classList.toggle("ftinvisible") }
+
 ftbtclose.onclick=fttoggle
 
 window.onkeyup=function(e){
@@ -24,9 +25,10 @@ for(i in ftimgs){
 	try{
 		ftimgs[i].pos = parseInt(i)
 		ftimgs[i].onclick=function(e){
-			if(this.outerHTML.match(/pasta/g))
+			if(this.getAttribute("pasta") != null){
 				ftsetimg(this.pos)
-			fttoggle()
+				fttoggle()
+			}
 		}
 	}catch(e){}
 }

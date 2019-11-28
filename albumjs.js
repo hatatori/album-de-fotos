@@ -69,8 +69,10 @@ albumObj = {
 		k = this.carregados
 		if(k.indexOf(this.pasta+"/"+this.lista[n].src.split("/").pop()) == -1){
 			k.push(this.pasta+"/"+this.lista[n].src.split("/").pop())
+
 			img = new Image()
 			img.src = this.pasta+"/"+this.lista[n].src.split("/").pop()
+
 			img.onload=function(){
 				albumvazio.appendChild(this)
 			}
@@ -87,6 +89,11 @@ for(i of album){
 	i.onclick=function(e){
 		albumObj.pasta = this.parentElement.parentElement.getAttribute("pasta")
 		albumObj.vai(this.pos)
+
+		albumObj.carrega(this.pos-1)
+		albumObj.carrega(this.pos-2)
+		albumObj.carrega(this.pos+1)
+		albumObj.carrega(this.pos+2)
 	}
 	i.parentElement.onclick=function(){
 		this.querySelector("img").click()

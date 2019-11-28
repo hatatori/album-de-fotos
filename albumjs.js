@@ -70,7 +70,7 @@ albumObj = {
 		if(k.indexOf(this.pasta+"/"+this.lista[n].src.split("/").pop()) == -1){
 			k.push(this.pasta+"/"+this.lista[n].src.split("/").pop())
 			img = new Image()
-			img.src = albumObj.lista[n].src
+			img.src = this.pasta+"/"+this.lista[n].src.split("/").pop()
 			img.onload=function(){
 				albumvazio.appendChild(this)
 			}

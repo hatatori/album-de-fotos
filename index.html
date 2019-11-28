@@ -1,37 +1,64 @@
-<!-- estrutura -->
-<div class="ftalbum ftinvisible" id="ftalbum">
-	<div class="btleft"><button id="ftbtprev" onclick='ftprev()'><</button></div>
-	<div class="btright"><button id="ftright" onclick='ftnext()'>></button></div>
-	<button id="ftbtclose">x</button>
-	<img id='ftativa' src=''>
+<style>
+	
+
+	.album{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.album div{
+		width: 100;
+		height: 100;
+		background-color: black;
+		margin:2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		overflow: hidden;
+	}
+
+
+</style>
+
+
+<div class="album" pasta="imgs">
+	<div><img src='thumb/1.jpg'></div>
+	<div><img src='thumb/2.jpg'></div>
+	<div><img src='thumb/3.jpg'></div>
+	<div><img src='thumb/4.jpg'></div>
+	<div><img src='thumb/5.jpg'></div>	
 </div>
 
-<pre>
-As imagens devem ter o mesmo nome, porém em pastas diferentes.
-Uma contendo as miniaturas e a outra contendo as originais.
+<div class="album" pasta="imgs2">
+	<div><img src='thumb/6.jpg'></div>
+	<div><img src='thumb/7.jpg'></div>
+	<div><img src='thumb/8.jpg'></div>
+	<div><img src='thumb/9.jpg'></div>
+	<div><img src='thumb/10.jpg'></div>	
+</div>
+
+<br><br><a href='albumjs.js' download="">albumjs</a>
+<textarea style="width: 100%;height: 400;border: none; outline: none;" spellcheck="false">
+<div class="album" pasta="imgs">
+	<div><img src='thumb/1.jpg'></div>
+	<div><img src='thumb/2.jpg'></div>
+	<div><img src='thumb/3.jpg'></div>
+	<div><img src='thumb/4.jpg'></div>
+	<div><img src='thumb/5.jpg'></div>	
+</div>
+
+<div class="album" pasta="imgs2">
+	<div><img src='thumb/6.jpg'></div>
+	<div><img src='thumb/7.jpg'></div>
+	<div><img src='thumb/8.jpg'></div>
+	<div><img src='thumb/9.jpg'></div>
+	<div><img src='thumb/10.jpg'></div>	
+</div>
+
+<script src='albumjs.js'></script>
+
+</textarea>
 
 
-</pre>
-
-<pre>&lt;img src='thumb/1.jpg'></pre>
-
-
-<img src="thumb/1.jpg">
-<img src="thumb/2.jpg">
-<img src="thumb/3.jpg">
-
-<pre>&lt;img pasta='big' src='thumb/1.jpg'></pre>
-
-
-<img pasta='big' src="thumb/3.jpg">
-<img pasta='big' src="thumb/4.jpg">
-<img pasta='big' src="thumb/5.jpg">
-<img pasta='big' src="thumb/6.jpg">
-<img pasta='big' src="thumb/7.jpg">
-<img pasta='big' src="thumb/8.jpg">
-<img pasta='big' src="thumb/1.jpg">
-<img pasta='big' src="thumb/2.jpg">
-<img pasta='big' src="thumb/9.jpg">
-
-<link rel="stylesheet" type="text/css" href="ftcss.css">
-<script src="ftjs.js"></script>
+<script src='albumjs.js'></script>

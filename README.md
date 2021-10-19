@@ -1,4 +1,4 @@
-http://hatatori.github.io/album-de-fotos
+http://hatatori.github.io/album-de-fotos/album2.html
 
 ```html
 <link rel="stylesheet" href="album2.css">

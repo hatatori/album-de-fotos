@@ -1,1 +1,17 @@
-# http://hatatori.github.io/album-de-fotos
+http://hatatori.github.io/album-de-fotos
+
+```html
+<link rel="stylesheet" href="album2.css">
+
+<div class="thumb">
+  <img src="thumb_imgs/1.jpg" real="imgs/1.jpg" width="100">
+  <img src="thumb_imgs/2.jpg" real="imgs/2.jpg" width="100">
+  <img src="thumb_imgs/3.jpg" real="imgs/3.jpg" width="100">
+  <img src="thumb_imgs/4.jpg" real="imgs/4.jpg" width="100">
+  <img src="thumb_imgs/5.jpg" real="imgs/5.jpg" width="100">
+</div>
+
+<div class="square" id="square"><img draggable="false"></div>
+
+<script src="album2.js"></script>
+```
